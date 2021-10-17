@@ -30,10 +30,14 @@ const Dashboard = ({ purchasedStocks }) => {
       Test!!!!!
       <Grid container spacing={3}>
         <Grid item xs={12} md={8} lg={9}>
-          
+          <paper>
+            tutorial1 --- !!!
+          </paper>
         </Grid>
         <Grid item xs={12} md={4} lg={3}>
-          
+        <paper>
+            tutorial2 --- !!! <a href="https://agithub.com/qiaosenlin/qiaosenlin/blob/main/resume.html"> test!!! </a>
+          </paper>
         </Grid>
         <Grid item xs={12}>
           
