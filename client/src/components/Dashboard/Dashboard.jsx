@@ -26,18 +26,16 @@ const Dashboard = ({ purchasedStocks }) => {
  
   return (
     <Container maxWidth="lg" className={styles.container}>
-      Hello!!!!!
-      Test!!!!!
       <Grid container spacing={3}>
         <Grid item xs={12} md={8} lg={9}>
-          <paper>
-            tutorial1 --- !!!
-          </paper>
+        <Paper className={fixedHeightPaper}>
+                tutorial1 --- Rader Chart <a href="https://agithub.com/qiaosenlin/qiaosenlin/blob/main/resume.html"> test!!! </a>
+          </Paper>
         </Grid>
         <Grid item xs={12} md={4} lg={3}>
-        <paper>
-            tutorial2 --- !!! <a href="https://agithub.com/qiaosenlin/qiaosenlin/blob/main/resume.html"> test!!! </a>
-          </paper>
+        <Paper className={fixedHeightPaper}>
+            tutorial2 --- Pie Chart <a href="https://agithub.com/qiaosenlin/qiaosenlin/blob/main/resume.html"> test!!! </a>
+          </Paper>
         </Grid>
         <Grid item xs={12}>
           
