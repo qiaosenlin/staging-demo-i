@@ -175,7 +175,7 @@ const Search = ({ setPurchasedStocks, purchasedStocks }) => {
         renderInput={(params) => (
           <TextField
             {...params}
-            label="Search for a stock"
+            label="Search for Tutorials"
             variant="outlined"
           />
         )}
@@ -195,27 +195,16 @@ const Search = ({ setPurchasedStocks, purchasedStocks }) => {
 };
 
 const stocks = [
-  { name: "Apple", ticker: "AAPL" },
-  { name: "Amazon", ticker: "AMZN" },
-  { name: "Google", ticker: "GOOG" },
-  { name: "Microsoft", ticker: "MSFT" },
-  { name: "Walmart", ticker: "WMT" },
-  { name: "Intel", ticker: "INTC" },
-  { name: "American Express", ticker: "AXP" },
-  { name: "Boeing", ticker: "BA" },
-  { name: "Cisco", ticker: "CSCO" },
-  { name: "Goldman Sachs", ticker: "GS" },
-  { name: "Johnson & Johnson", ticker: "JNJ" },
-  { name: "Coca-Cola", ticker: "KO" },
-  { name: "McDonald's", ticker: "MCD" },
-  { name: "Nike", ticker: "NKE" },
-  { name: "Procter & Gamble", ticker: "PG" },
-  { name: "Verizon", ticker: "VZ" },
-  { name: "Salesforce", ticker: "CRM" },
-  { name: "Visa", ticker: "V" },
-  { name: "UnitedHealth", ticker: "UNH" },
-  { name: "IBM", ticker: "IBM" },
-  { name: "Chevron", ticker: "CVX" },
+  { name: "Tutorial1", ticker: "AAPL" },
+  { name: "Tutorial2", ticker: "AMZN" },
+  { name: "Tutorial3", ticker: "GOOG" },
+  { name: "Tutorial4", ticker: "MSFT" },
+  { name: "Tutorial5", ticker: "WMT" },
+  { name: "Tutorial6", ticker: "INTC" },
+  { name: "Tutorial7", ticker: "AXP" },
+  { name: "Tutorial8", ticker: "BA" },
+  { name: "Tutorial9", ticker: "CSCO" },
+  { name: "Tutorial10", ticker: "GS" },
 ];
 
 export default Search;

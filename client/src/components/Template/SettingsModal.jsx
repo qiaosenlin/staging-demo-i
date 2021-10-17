@@ -111,10 +111,10 @@ const SettingsModalContent = ({ setSettingsOpen }) => {
                 fullWidth
                 disabled
                 id="balance"
-                label="Cash Balance"
+                label="Current Completion"
                 name="balance"
                 autoComplete="balance"
-                value={userData.user.balance}
+                value= "Tutorial 1"
               />
             </form>
             <br />
