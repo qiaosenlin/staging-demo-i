@@ -29,22 +29,27 @@ const Dashboard = ({ purchasedStocks }) => {
       <Grid container spacing={4}>
         <Grid item xs={12} md={5} lg={5}>
         <Paper className={fixedHeightPaper}>
-                tutorial1 --- Rader Chart <a href="https://agithub.com/qiaosenlin/qiaosenlin/blob/main/resume.html"> test!!! </a>
+                tutorial1 --- Rader Chart 
+                We have built a example tutorial with our client about rader chart. 
+                It was running on the docker container and we failed to deploy it to the web.
+                Will be back in a few weeks.
+                The following link is a temporary presentation to what we suppose to have.
+                <a href="https://github.com/COMP523TEAMI/Online-Peer-Learning-for-Intro-Stats"> Rader Chart </a>
           </Paper>
         </Grid>
         <Grid item xs={12} md={5} lg={5}>
         <Paper className={fixedHeightPaper}>
-            tutorial2 --- Pie Chart <a href="https://agithub.com/qiaosenlin/qiaosenlin/blob/main/resume.html"> test!!! </a>
+            tutorial2 --- Pie Chart <a href="https://github.com/COMP523TEAMI/Online-Peer-Learning-for-Intro-Stats"> Pie Chart </a>
           </Paper>
         </Grid>
         <Grid item xs={12} md={5} lg={5}>
         <Paper className={fixedHeightPaper}>
-                tutorial3 --- Regression image <a href="https://agithub.com/qiaosenlin/qiaosenlin/blob/main/resume.html"> test!!! </a>
+                tutorial3 --- Regression image <a href="https://github.com/COMP523TEAMI/Online-Peer-Learning-for-Intro-Stats"> Regression image </a>
           </Paper>
         </Grid>
         <Grid item xs={12} md={5} lg={5}>
         <Paper className={fixedHeightPaper}>
-                tutorial4 --- KNN image <a href="https://agithub.com/qiaosenlin/qiaosenlin/blob/main/resume.html"> test!!! </a>
+                tutorial4 --- KNN image <a href="https://github.com/COMP523TEAMI/Online-Peer-Learning-for-Intro-Stats"> KNN image </a>
           </Paper>
         </Grid>
       </Grid>
