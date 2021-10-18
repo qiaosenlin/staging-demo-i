@@ -29,11 +29,8 @@ const Dashboard = ({ purchasedStocks }) => {
       <Grid container spacing={4}>
         <Grid item xs={12} md={5} lg={5}>
         <Paper className={fixedHeightPaper}>
-                tutorial1 --- Rader Chart 
-                We have built a example tutorial with our client about rader chart. 
-                It was running on the docker container and we failed to deploy it to the web.
-                Will be back in a few weeks.
-                The following link is a temporary presentation to what we suppose to have.
+                tutorial1 --- Rader Chart (still under development, see the link for further information)
+                
                 <a href="https://github.com/COMP523TEAMI/Online-Peer-Learning-for-Intro-Stats"> Rader Chart </a>
           </Paper>
         </Grid>
