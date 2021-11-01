@@ -6,6 +6,7 @@ import {Container, Grid, Paper } from "@material-ui/core";
 import Chart from "./Chart";
 import Balance from "./Balance";
 import Purchases from "./Purchases";
+import Text from "./Text";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
