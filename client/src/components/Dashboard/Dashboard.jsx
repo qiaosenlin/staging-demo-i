@@ -6,7 +6,7 @@ import {Container, Grid, Paper } from "@material-ui/core";
 import Chart from "./Chart";
 import Balance from "./Balance";
 import Purchases from "./Purchases";
-import Text from "./Text";
+
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -51,11 +51,6 @@ const Dashboard = ({ purchasedStocks }) => {
           </Paper>
         </Grid>
       </Grid>
-      <Text>{`
-          
-          
-
-        `}</Text>
       <iframe height="400" width="100%" frameborder="no" src="https://petometha.shinyapps.io/Online-Peer-Learning-for-Intro-Stats/"> </iframe>
     </Container>
   );
