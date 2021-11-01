@@ -50,6 +50,7 @@ const Dashboard = ({ purchasedStocks }) => {
           </Paper>
         </Grid>
       </Grid>
+      <iframe height="400" width="100%" frameborder="no" src="https://petometha.shinyapps.io/Online-Peer-Learning-for-Intro-Stats/"> </iframe>
     </Container>
   );
 };
