@@ -32,7 +32,7 @@ const Dashboard = ({ purchasedStocks }) => {
         <Paper className={fixedHeightPaper}>
                 tutorial1 --- Rader Chart (still under development, see the link for further information)
                 
-                <a href="https://github.com/COMP523TEAMI/Online-Peer-Learning-for-Intro-Stats"> Rader Chart </a>
+                <a href="./tmp/index.html"> Rader Chart </a>
           </Paper>
         </Grid>
         <Grid item xs={12} md={5} lg={5}>
