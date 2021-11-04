@@ -37,7 +37,7 @@ const Dashboard = ({ purchasedStocks }) => {
         </Grid>
         <Grid item xs={12} md={5} lg={5}>
         <Paper className={fixedHeightPaper}>
-            tutorial2 --- Pie Chart <a href="https://github.com/COMP523TEAMI/Online-Peer-Learning-for-Intro-Stats"> Pie Chart </a>
+            tutorial2 --- Pie Chart <a href="./tmp/index.html"> Pie Chart </a>
           </Paper>
         </Grid>
         <Grid item xs={12} md={5} lg={5}>
