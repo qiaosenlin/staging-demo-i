@@ -64,4 +64,25 @@ Heroku is recommended for the staging development. Current staging site can be f
 
 No addons needed for the heroku deployment. We don't provide continuous integration or continuous deployment now but will provide it very soon.
 
+### 4. Technologies used
+Frontend framework: ReactJS
+Database: MongoDB
+Deployment: Heroku and AWS
+Testing: Jest
+
+ADRs:
+
+### 5. Contributing
+Contact us to get the following permission:
+-[radarchart example repo](https://github.com/COMP523TEAMI).
+-[staging site](https://teami-staging.herokuapp.com/).
+-[Trello](https://trello.com/b/y8enL7qW/online-peer-learning-for-intro-stats).
+
+style, testing, or process conventions and more details please visit our [team website](https://comp523teami.github.io/TEAMI/).
+
+### 6. Authors
+Qiaosen Lin, Yuhao Zhou, Qiuyang Zhang
+
+### 7. License
+
 
