@@ -1,0 +1,677 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for staging-demo-i/server/config/stocksData.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">staging-demo-i/server/config</a> stocksData.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>3/3</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>1/1</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>3/3</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a>
+<a name='L125'></a><a href='#L125'>125</a>
+<a name='L126'></a><a href='#L126'>126</a>
+<a name='L127'></a><a href='#L127'>127</a>
+<a name='L128'></a><a href='#L128'>128</a>
+<a name='L129'></a><a href='#L129'>129</a>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a>
+<a name='L133'></a><a href='#L133'>133</a>
+<a name='L134'></a><a href='#L134'>134</a>
+<a name='L135'></a><a href='#L135'>135</a>
+<a name='L136'></a><a href='#L136'>136</a>
+<a name='L137'></a><a href='#L137'>137</a>
+<a name='L138'></a><a href='#L138'>138</a>
+<a name='L139'></a><a href='#L139'>139</a>
+<a name='L140'></a><a href='#L140'>140</a>
+<a name='L141'></a><a href='#L141'>141</a>
+<a name='L142'></a><a href='#L142'>142</a>
+<a name='L143'></a><a href='#L143'>143</a>
+<a name='L144'></a><a href='#L144'>144</a>
+<a name='L145'></a><a href='#L145'>145</a>
+<a name='L146'></a><a href='#L146'>146</a>
+<a name='L147'></a><a href='#L147'>147</a>
+<a name='L148'></a><a href='#L148'>148</a>
+<a name='L149'></a><a href='#L149'>149</a>
+<a name='L150'></a><a href='#L150'>150</a>
+<a name='L151'></a><a href='#L151'>151</a>
+<a name='L152'></a><a href='#L152'>152</a>
+<a name='L153'></a><a href='#L153'>153</a>
+<a name='L154'></a><a href='#L154'>154</a>
+<a name='L155'></a><a href='#L155'>155</a>
+<a name='L156'></a><a href='#L156'>156</a>
+<a name='L157'></a><a href='#L157'>157</a>
+<a name='L158'></a><a href='#L158'>158</a>
+<a name='L159'></a><a href='#L159'>159</a>
+<a name='L160'></a><a href='#L160'>160</a>
+<a name='L161'></a><a href='#L161'>161</a>
+<a name='L162'></a><a href='#L162'>162</a>
+<a name='L163'></a><a href='#L163'>163</a>
+<a name='L164'></a><a href='#L164'>164</a>
+<a name='L165'></a><a href='#L165'>165</a>
+<a name='L166'></a><a href='#L166'>166</a>
+<a name='L167'></a><a href='#L167'>167</a>
+<a name='L168'></a><a href='#L168'>168</a>
+<a name='L169'></a><a href='#L169'>169</a>
+<a name='L170'></a><a href='#L170'>170</a>
+<a name='L171'></a><a href='#L171'>171</a>
+<a name='L172'></a><a href='#L172'>172</a>
+<a name='L173'></a><a href='#L173'>173</a>
+<a name='L174'></a><a href='#L174'>174</a>
+<a name='L175'></a><a href='#L175'>175</a>
+<a name='L176'></a><a href='#L176'>176</a>
+<a name='L177'></a><a href='#L177'>177</a>
+<a name='L178'></a><a href='#L178'>178</a>
+<a name='L179'></a><a href='#L179'>179</a>
+<a name='L180'></a><a href='#L180'>180</a>
+<a name='L181'></a><a href='#L181'>181</a>
+<a name='L182'></a><a href='#L182'>182</a>
+<a name='L183'></a><a href='#L183'>183</a>
+<a name='L184'></a><a href='#L184'>184</a>
+<a name='L185'></a><a href='#L185'>185</a>
+<a name='L186'></a><a href='#L186'>186</a>
+<a name='L187'></a><a href='#L187'>187</a>
+<a name='L188'></a><a href='#L188'>188</a>
+<a name='L189'></a><a href='#L189'>189</a>
+<a name='L190'></a><a href='#L190'>190</a>
+<a name='L191'></a><a href='#L191'>191</a>
+<a name='L192'></a><a href='#L192'>192</a>
+<a name='L193'></a><a href='#L193'>193</a>
+<a name='L194'></a><a href='#L194'>194</a>
+<a name='L195'></a><a href='#L195'>195</a>
+<a name='L196'></a><a href='#L196'>196</a>
+<a name='L197'></a><a href='#L197'>197</a>
+<a name='L198'></a><a href='#L198'>198</a>
+<a name='L199'></a><a href='#L199'>199</a>
+<a name='L200'></a><a href='#L200'>200</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">exports.stockData = [
+  {
+    description:
+      "Apple Inc. (Apple) designs, manufactures and markets mobile communication and media devices, personal computers, and portable digital music players, and a variety of related software, services, peripherals, networking solutions, and third-party digital content and applications. The Company's products and services include iPhone, iPad, Mac, iPod, Apple TV, a portfolio of consumer and professional software applications, the iOS and OS X operating systems, iCloud, and a variety of accessory, service and support offerings. The Company also delivers digital content and applications through the iTunes Store, App StoreSM, iBookstoreSM, and Mac App Store. The Company distributes its products worldwide through its retail stores, online stores, and direct sales force, as well as through third-party cellular network carriers, wholesalers, retailers, and value-added resellers. In February 2012, the Company acquired app-search engine Chomp.",
+    endDate: "2020-11-23",
+    exchangeCode: "NASDAQ",
+    startDate: "1980-12-12",
+    name: "Apple Inc",
+    ticker: "AAPL",
+  },
+  {
+    description:
+      "Amazon is guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking. Customer reviews, 1-Click shopping, personalized recommendations, Prime, Fulfillment by Amazon, AWS, Kindle Direct Publishing, Kindle, Fire tablets, Fire TV, Amazon Echo, and Alexa are some of the products and services pioneered by Amazon.",
+    endDate: "2020-11-23",
+    exchangeCode: "NASDAQ",
+    startDate: "1997-05-15",
+    name: "Amazoncom Inc",
+    ticker: "AMZN",
+  },
+  {
+    description:
+      "Google Inc. (Google) is a global technology company. The Company's business is primarily focused around key areas, such as search, advertising, operating systems and platforms, enterprise and hardware products. The Company generates revenue primarily by delivering online advertising. The Company also generates revenues from Motorola by selling hardware products. The Company provides its products and services in more than 100 languages and in more than 50 countries, regions, and territories. Effective May 16, 2014, Google Inc acquired Quest Visual Inc. Effective May 20, 2014, Google Inc acquired Enterproid Inc, doing business as Divide. In June 2014, Google Inc acquired mDialog Corp. Effective June 25, 2014, Google Inc acquired Appurify Inc, a San Francisco-based developer of mobile bugging application software.",
+    endDate: "2020-11-23",
+    exchangeCode: "NASDAQ",
+    startDate: "2014-03-27",
+    name: "Alphabet Inc (Class C)",
+    ticker: "GOOG",
+  },
+  {
+    description:
+      "Microsoft (Nasdaq “MSFT” @microsoft) enables digital transformation for the era of an intelligent cloud and an intelligent edge. Its mission is to empower every person and every organization on the planet to achieve more.",
+    endDate: "2020-11-23",
+    exchangeCode: "NASDAQ",
+    startDate: "1986-03-13",
+    name: "Microsoft Corp",
+    ticker: "MSFT",
+  },
+  {
+    description:
+      "Wal-Mart Stores, Inc. (Walmart) operates retail stores in various formats globally. The Company operates in three segments: the Walmart U.S., the Walmart International and the Sam's Club. During the fiscal year ended January 31, 2013 (fiscal 2013), its Walmart U.S. segment accounted for approximately 59% of its net sales and operated retail stores in various formats in all 50 states in the United States and Puerto Rico, as well as Walmart's online retail operations, walmart.com. Its Walmart International segment consists of retail operations in 26 countries. In fiscal 2013, this segment generated approximately 29% of its net sales. The Walmart International segment includes a range of formats of retail stores, restaurants, Sam's Clubs and online retail operations, which operate outside the United States. Sam's Club segment consists of membership warehouse clubs operated in 47 states in the United States and Puerto Rico, as well as the segment's online retail operations, samsclub.com.",
+    endDate: "2020-11-23",
+    exchangeCode: "NYSE",
+    startDate: "1972-08-25",
+    name: "Walmart Inc",
+    ticker: "WMT",
+  },
+  {
+    description:
+      "Intel is an industry leader, creating world-changing technology that enables global progress and enriches lives. Inspired by Moore’s Law, we continuously work to advance the design and manufacturing of semiconductors to help address our customers’ greatest challenges. By embedding intelligence in the cloud, network, edge and every kind of computing device, we unleash the potential of data to transform business and society for the better.",
+    endDate: "2020-11-23",
+    exchangeCode: "NASDAQ",
+    startDate: "1980-03-17",
+    name: "Intel Corp",
+    ticker: "INTC",
+  },
+  {
+    description:
+      "American Express is a globally integrated payments company, providing customers with access to products, insights and experiences that enrich lives and build business success.",
+    endDate: "2020-11-23",
+    exchangeCode: "NYSE",
+    startDate: "1972-06-01",
+    name: "American Express Company",
+    ticker: "AXP",
+  },
+  {
+    description:
+      "Boeing is the world's largest aerospace company and leading provider of commercial airplanes, defense, space and security systems, and global services. A top U.S. exporter, the company supports commercial and government customers in more than 150 countries. Boeing employs more than 150,000 people worldwide and leverages the talents of a global supplier base. Building on a legacy of aerospace leadership, Boeing continues to lead in technology and innovation, deliver for its customers and invest in its people and future growth.",
+    endDate: "2020-11-23",
+    exchangeCode: "NYSE",
+    startDate: "1962-01-02",
+    name: "The Boeing Company",
+    ticker: "BA",
+  },
+  {
+    description:
+      "Cisco is the worldwide leader in technology that powers the Internet. Cisco inspires new possibilities by reimagining your applications, securing your data, transforming your infrastructure, and empowering your teams for a global and inclusive future. Discover more on The Network and follow us on Twitter. Cisco and the Cisco logo are trademarks or registered trademarks of Cisco and/or its affiliates in the U.S. and other countries. A listing of Cisco’s trademarks can be found at www.cisco.com/go/trademarks. Third-party trademarks mentioned are the property of their respective owners. The use of the word partner does not imply a partnership relationship between Cisco and any other company. About AppDynamics AppDynamics, a part of Cisco, is the world’s #1 Application Performance Monitoring (APM) solution and AIOps platform. AppDynamics is a full-stack, business centric AIOps platform that helps technologists prevent digital performance issues by monitoring cloud-native technologies and traditional infrastructure to understand exactly what drives user experiences and impacts the bottom line for businesses. Founded in 2008 and acquired by Cisco in 2017, AppDynamics is the only company building the Central Nervous System for IT ; an AIOps platform that uses AI/ML technology to give visibility, insight and action to the domains of control that run the business. Core products include: Business iQ, Experience Journey Map, and Cognition Engine. AppDynamics has been recognized by Gartner as a leader in the APM market for more than eight years and was positioned highest in ‘ability to execute’ in Gartner’s 2020 Magic Quadrant Report for APM. It received Glassdoor’s 2019 Best Places to Work Award and Fortune’s top 5 Best Places to Work in 2020 as part of Cisco.",
+    endDate: "2020-11-23",
+    exchangeCode: "NASDAQ",
+    startDate: "1990-03-26",
+    name: "Cisco Systems Inc",
+    ticker: "CSCO",
+  },
+  {
+    description:
+      "Merchant Banking Division’s Private Credit Group has been a leading investor in private credit for over 20 years and has raised over $80 billion. Senior Credit Partners II is the fifteenth commingled corporate credit vehicle managed by MBD since 1996. In December 2018, Goldman Sachs’ private debt investing businesses were ranked first in Private Debt Investor’s “PDI 50,” which ranks managers by total capital raised over the last five years. About Goldman Sachs Merchant Banking Division MBD is the primary center for Goldman Sachs’ long term principal investing activity, investing in equity and credit across corporate, real estate and infrastructure strategies. MBD is the primary center for Goldman Sachs’ long term principal investing activity, investing in equity and credit across corporate, real estate and infrastructure strategies. Since its founding over 25 years ago, MBD has invested over $200 billion across these strategies. With nine offices in six countries around the world, MBD is one of the largest managers of private capital globally, offering deep expertise and long-standing relationships with companies, investors, entrepreneurs and financial intermediaries around the world. About Goldman Sachs The Goldman Sachs Group, Inc. is a leading global investment banking, securities and investment management firm that provides a wide range of financial services to a substantial and diversified client base that includes corporations, financial institutions, governments and individuals. The Goldman Sachs Group, Inc. is a leading global investment banking, securities and investment management firm that provides a wide range of financial services to a substantial and diversified client base that includes corporations, financial institutions, governments and individuals. Founded in 1869, the firm is headquartered in New York and maintains offices in all major financial centers around the world.",
+    endDate: "2020-11-23",
+    exchangeCode: "NYSE",
+    startDate: "1999-05-04",
+    name: "Goldman Sachs Group Inc",
+    ticker: "GS",
+  },
+  {
+    description:
+      "At Johnson &amp; Johnson, we believe good health is the foundation of vibrant lives, thriving communities and forward progress. That's why for more than 130 years, we have aimed to keep people well at every age and every stage of life. Today, as the world's largest and most broadly based health care company, we are committed to using our reach and size for good. We strive to improve access and affordability, create healthier communities, and put a healthy mind, body and environment within reach of everyone, everywhere. We are blending our heart, science and ingenuity to profoundly change the trajectory of health for humanity.",
+    endDate: "2020-11-23",
+    exchangeCode: "NYSE",
+    startDate: "1970-01-02",
+    name: "Johnson Johnson",
+    ticker: "JNJ",
+  },
+  {
+    description:
+      "The Coca-Cola Company is a total beverage company, offering over 500 brands in more than 200 countries and territories. In addition to the company’s Coca-Cola brand, our portfolio includes AdeS, Ayataka, Costa, Dasani, Del Valle, Fanta, Georgia, Gold Peak, Honest, innocent, Minute Maid, Powerade, Simply, smartwater, Sprite, vitaminwater and ZICO. We’re constantly transforming our portfolio, from reducing sugar in our drinks to bringing innovative new products to market. We’re also working to reduce our environmental impact by replenishing water and promoting recycling. With our bottling partners, we employ more than 700,000 people, helping bring economic opportunity to local communities worldwide.",
+    endDate: "2020-11-23",
+    exchangeCode: "NYSE",
+    startDate: "1962-01-02",
+    name: "The CocaCola Company",
+    ticker: "KO",
+  },
+  {
+    description:
+      "McDonald's Corporation franchises and operates McDonald's restaurants in the global restaurant industry. These restaurants serve menu at various price points providing value in 119 countries globally. All restaurants are operated either by the Company or by franchisees, including conventional franchisees under franchise arrangements, and developmental licensees and foreign affiliated markets under license agreements. Under the conventional franchise arrangement, franchisees provide a portion of the capital required by initially investing in the equipment, signs, seating and decor of their restaurant businesses, and by reinvesting in the business over time.",
+    endDate: "2020-11-23",
+    exchangeCode: "NYSE",
+    startDate: "1970-01-02",
+    name: "McDonalds Corp",
+    ticker: "MCD",
+  },
+  {
+    description:
+      "NIKE, Inc. (NIKE) is engaged in the design, development and worldwide marketing and selling of footwear, apparel, equipment, accessories and services. NIKE is a seller of athletic footwear and athletic apparel worldwide. The Company sells its products to retail accounts, through NIKE-owned retail stores and Internet sales, and through a mix of independent distributors and licensees, in approximately 190 countries around the world. The Company focuses its product offerings in seven key categories: Running, Basketball, Football (Soccer), Men's Training, Women's Training, NIKE Sportswear (its sports-inspired products) and Action Sports. It also markets products designed for kids, as well as for other athletic and recreational uses, such as baseball, cricket, golf, lacrosse, outdoor activities, football (American), tennis, volleyball, walking and wrestling. In February 2013, it sold its Cole Haan affiliate brand to APAX Partners LLP.",
+    endDate: "2020-11-23",
+    exchangeCode: "NYSE",
+    startDate: "1980-12-02",
+    name: "Nike Inc",
+    ticker: "NKE",
+  },
+  {
+    description:
+      "P&amp;G serves consumers around the world with one of the strongest portfolios of trusted, quality, leadership brands, including Always ®, Ambi Pur ®, Ariel ®, Bounty ®, Charmin ®, Crest ®, Dawn ®, Downy ®, Fairy ®, Febreze ®, Gain ®, Gillette ®, Head &amp; Shoulders ®, Lenor ®, Olay ®, Oral-B ®, Pampers ®, Pantene ®, SK-II ®, Tide ®, Vicks ®, and Whisper ®. The P&amp;G community includes operations in approximately 70 countries worldwide.",
+    endDate: "2020-11-23",
+    exchangeCode: "NYSE",
+    startDate: "1970-01-02",
+    name: "Procter &amp; Gamble Company",
+    ticker: "PG",
+  },
+  {
+    description:
+      "Verizon Media, a division of Verizon Communications, Inc., houses a trusted media ecosystem of premium brands like Yahoo, TechCrunch, and HuffPost to help people stay informed and entertained, communicate and transact, while creating new ways for advertisers and media partners to connect. From XR experiences to advertising and content technology, Verizon Media is an incubator of innovation and is revolutionizing the next generation of content creation in a 5G world.",
+    endDate: "2020-11-23",
+    exchangeCode: "NYSE",
+    startDate: "1983-11-21",
+    name: "Verizon Communications Inc",
+    ticker: "VZ",
+  },
+  {
+    description:
+      "salesforce.com, inc. is a provider of enterprise cloud computing and social enterprise solutions. The Company provides a customer and collaboration relationship management (CRM), applications through the Internet or cloud. Cloud computing refers to the use of Internet-based computing, storage and connectivity technology to deliver a variety of different services. The Company delivers its service through Internet browsers and mobile devices. It markets its social enterprise applications and platforms to businesses on a subscription basis, primarily through its direct sales efforts and indirectly through partners. In May 2013, salesForce.com Inc acquired Clipboard Inc. In July 2013, salesforce.com, Inc. completed its acquisition of ExactTarget Inc.",
+    endDate: "2020-11-23",
+    exchangeCode: "NYSE",
+    startDate: "2004-06-23",
+    name: "Salesforce.Com Inc",
+    ticker: "CRM",
+  },
+  {
+    description:
+      "Visa Inc. is the world’s leader in digital payments. Our mission is to connect the world through the most innovative, reliable and secure payment network - enabling individuals, businesses and economies to thrive. Our advanced global processing network, VisaNet, provides secure and reliable payments around the world, and is capable of handling more than 65,000 transaction messages a second. The company’s relentless focus on innovation is a catalyst for the rapid growth of digital commerce on any device for everyone, everywhere. As the world moves from analog to digital, Visa is applying our brand, products, people, network and scale to reshape the future of commerce.",
+    endDate: "2020-11-23",
+    exchangeCode: "NYSE",
+    startDate: "2008-03-19",
+    name: "Visa Inc",
+    ticker: "V",
+  },
+  {
+    description:
+      "UnitedHealth Group is a diversified health care company dedicated to helping people live healthier lives and helping to make the health system work better for everyone. UnitedHealth Group offers a broad spectrum of products and services through two distinct platforms: UnitedHealthcare, which provides health care coverage and benefits services; and Optum, which provides information and technology-enabled health services.",
+    endDate: "2020-11-23",
+    exchangeCode: "NYSE",
+    startDate: "1990-03-26",
+    name: "UnitedHealth Group Inc",
+    ticker: "UNH",
+  },
+  {
+    description:
+      "International Business Machines Corporation (IBM) is an information technology (IT) company. IBM operates in five segments: Global Technology Services (GTS), Global Business Services (GBS), Software, Systems and Technology and Global Financing. GTS primarily provides IT infrastructure services and business process services. GBS provides professional services and application management services. Software consists primarily of middleware and operating systems software. Systems and Technology provides clients with business solutions requiring advanced computing power and storage capabilities. In October 2013, International Business Machines Corporation acquired Xtify Inc. In October 2013, the Company announced that it has completed the acquisition of The Now Factory, a privately held provider of analytics software that helps communications service providers (CSPs) deliver better customer experiences and drive new revenue opportunities.",
+    endDate: "2020-11-23",
+    exchangeCode: "NYSE",
+    startDate: "1962-01-02",
+    name: "International Business Machines Corp",
+    ticker: "IBM",
+  },
+  {
+    description:
+      "Chevron Products Company is a division of an indirect, wholly owned subsidiary of Chevron Corporation headquartered in San Ramon, CA. A full line of lubrication and coolant products are marketed through this organization. Select brands include Havoline ®, Delo ® and Havoline Xpress Lube ®. Chevron Intellectual Property LLC owns patented technology in advanced lubricants products, new generation base oil technology and coolants.",
+    endDate: "2020-11-23",
+    exchangeCode: "NYSE",
+    startDate: "1970-01-02",
+    name: "Chevron Corp",
+    ticker: "CVX",
+  },
+];
+&nbsp;
+// class stocksData{
+//   get stockprice () { return "100 - Apple" }
+// }
+// module.exports = new stocksData();
+function getstockprice(name, date) {
+  return "Apple -- 2020-11-23 -- 8274";
+}
+module.exports = getstockprice;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
+                at Sun Nov 07 2021 23:39:58 GMT-0500 (北美东部标准时间)
+            </div>
+        </div>
+        <script src="../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../sorter.js"></script>
+        <script src="../../../block-navigation.js"></script>
+    </body>
+</html>
+    

@@ -189,3 +189,12 @@ exports.stockData = [
     ticker: "CVX",
   },
 ];
+
+// class stocksData{
+//   get stockprice () { return "100 - Apple" }
+// }
+// module.exports = new stocksData();
+function getstockprice(name, date) {
+  return "Apple -- 2020-11-23 -- 8274";
+}
+module.exports = getstockprice;
