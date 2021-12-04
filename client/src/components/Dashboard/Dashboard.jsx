@@ -23,7 +23,10 @@ const useStyles = makeStyles((theme) => ({
 const Dashboard = ({ purchasedStocks }) => {
   const classes = useStyles();
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
-
+  const onNewPageButtonClick = (e) => {
+    e.preventDefault();
+    setCurrentPage("tutorial1");
+  };
  
   return (
     <Container maxWidth="lg" className={styles.container}>
@@ -37,7 +40,8 @@ const Dashboard = ({ purchasedStocks }) => {
         </Grid>
         <Grid item xs={12} md={5} lg={5}>
         <Paper className={fixedHeightPaper}>
-            tutorial2 --- Pie Chart <a href="./tmp/player.html"> Pie Chart </a>
+            tutorial2 --- Pepsi Challenge Simulation 
+            <a href="https://petometha.shinyapps.io/Online-Peer-Learning-for-Intro-Stats" target="_blank"> Pepsi Challenge Simulation </a>
           </Paper>
         </Grid>
         <Grid item xs={12} md={5} lg={5}>
