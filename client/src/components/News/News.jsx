@@ -37,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
 const LoadingCards = ({ loading }) => {
   return (
     <div>
@@ -85,6 +86,12 @@ const NewsCards = ({ cards, classes }) => {
       ))}
     </Grid>
   );
+};  
+const UploadTutorial = async (e) => {
+  e.preventDefault();
+
+
+  alert("Success!");
 };
 
 const Upload = () => {
@@ -134,7 +141,20 @@ const Upload = () => {
                 
                 value= "plug in your url"
               />
+              
+              <Box display="flex" justifyContent="center">
+              <Button
+                type="submit"
+                variant="contained"
+                color="primary"
+                className="change"
+                onClick={UploadTutorial}
+              >
+                Upload
+              </Button>
+            </Box>
     </CardContent>
+
   );
 };
 
