@@ -1,118 +1,88 @@
-# Stock Simulator
-  
-Comp426 Final Project <br>
-Group Name: Team SoMao
-## Introduction
-  
-This web app is intended to provide a simulation of the real stock market. Every user is given an initial amount of 100,000 dollars, which they can use to purchase a variety of stocks. User can also search for a particular stock and view its information. For each stock, we provide a line chart of its price for the last three years so that user can do some analysis. We also provide the most recent market news for user to make better decisions.
-   
-## Tech Stack
- 
-We used React.js as our frontend framework, and Express, Node as the backend framework. We store user's information in Mongodb and the deploy the database on MongoDB Atlas. In addition to user's name and password, we also store user's balance as part of the schema.
-The 3rd party API that we used are https://finnhub.io/ and https://www.tiingo.com/, one for retreiving the latest market news and one for retrieving the stock price.
+### 0. Summary
+It's a Online-Peer-Learning-for-Intro-Stats project, Our project’s goal is to build an interactive web app for Intro Stats using R-shiny. We use reactJS as our frontend and implement convergence and rshiny to help build some tutorials which shares live data. Login authentication and search function are also added.
 
-## API Documentation
+### 1. Getting started
+##### 1.1 Prerequisites
+Convengence, a javascript library is needed, so please first follow the guide in [convergence website](https://docs.convergence.io/guide/) to download some required software. 
 
-### Market News
-Sample Request:
+Rstudio, a platform for rshiny file development, follow the guide in [R studio](https://www.rstudio.com/) to download and install.
+Node.js
+for macOS
 ```
-import requests
-r = requests.get('https://finnhub.io/api/v1/news?category=general&token=bupiv4v48v6tm7o3vs9g')
-print(r.json())
+brew install node
+```
+for windows
+```
+choco install nvs
 ```
 
-Sample Response:
+Remember to initialize in the repo file
 ```
-[
-  {
-    "category": "technology",
-    "datetime": 1596589501,
-    "headline": "Square surges after reporting 64% jump in revenue, more customers using Cash App",
-    "id": 5085164,
-    "image": "https://image.cnbcfm.com/api/v1/image/105569283-1542050972462rts25mct.jpg?v=1542051069",
-    "related": "",
-    "source": "CNBC",
-    "summary": "Shares of Square soared on Tuesday evening after posting better-than-expected quarterly results and strong growth in its consumer payments app.",
-    "url": "https://www.cnbc.com/2020/08/04/square-sq-earnings-q2-2020.html"
-  },
-  {
-    "category": "business",
-    "datetime": 1596588232,
-    "headline": "B&G Foods CEO expects pantry demand to hold up post-pandemic",
-    "id": 5085113,
-    "image": "https://image.cnbcfm.com/api/v1/image/106629991-1595532157669-gettyimages-1221952946-362857076_1-5.jpeg?v=1595532242",
-    "related": "",
-    "source": "CNBC",
-    "summary": "\"I think post-Covid, people will be working more at home, which means people will be eating more breakfast\" and other meals at home, B&G CEO Ken Romanzi said.",
-    "url": "https://www.cnbc.com/2020/08/04/bg-foods-ceo-expects-pantry-demand-to-hold-up-post-pandemic.html"
-  },
-  {
-    "category": "top news",
-    "datetime": 1596584406,
-    "headline": "Anthony Levandowski gets 18 months in prison for stealing Google self-driving car files",
-    "id": 5084850,
-    "image": "https://image.cnbcfm.com/api/v1/image/106648265-1596584130509-UBER-LEVANDOWSKI.JPG?v=1596584247",
-    "related": "",
-    "source": "CNBC",
-    "summary": "A U.S. judge on Tuesday sentenced former Google engineer Anthony Levandowski to 18 months in prison for stealing a trade secret from Google related to self-driving cars months before becoming the head of Uber Technologies Inc's rival unit.",
-    "url": "https://www.cnbc.com/2020/08/04/anthony-levandowski-gets-18-months-in-prison-for-stealing-google-self-driving-car-files.html"
+npm init
+```
+
+##### 1.2 Installing
+download the [docker](https://docs.docker.com/), add the convergence container and then click run in docker dashboard. 
+Contact us to get the updated AWS server which holds convergence service to get the live data from tutorials. **email: qiuyang@email.unc.edu**
+
+##### 1.3 Running locally
+After connecting to our AWS server, double click index.html to play around the radarchart.js example.
+To run locally run on the tutorial rshiny file, open up the rshiny file in the repo and click run in Rstudio. The generated output will be a HTML file and can share live-data after connect to the AWS convergence server we provide.
+
+##### 1.4 
+Contact us and connect to AWS server which holds convergence service before testing/developing.
+
+### 2. Testing
+##### 2.1 
+Jest is used to test our project.
+Install Jest using yarn:
+```
+yarn add --dev jest
+```
+Or npm:
+```
+npm install --save-dev jest
+```
+
+add following configuration in the package.json
+```
+"scripts": {
+      "test": "jest"
   }
-  }]
-```
-### End-of-Day Stock Price
-```Sample Request:
-var request = require('request');
-var requestOptions = {
-        'url': 'https://api.tiingo.com/tiingo/daily/aapl?token=157d6ccabf72a9cc3251bb252504bc39f61b040e',
-        'headers': {
-            'Content-Type': 'application/json'
-            }
-        };
-
-request(requestOptions,
-        function(error, response, body) {
-            console.log(body);
-        }
-);  
 ```
 
-Sample Response:
-```
-{
-    "ticker": "AAPL",
-    "name": "Apple Inc",
-    "exchangeCode": "NASDAQ",
-    "startDate": "1980-12-12",
-    "endDate": "2019-01-25",
-    "description": "Apple Inc. (Apple) designs, manufactures and markets mobile communication and media devices, personal
-computers, and portable digital music players, and a variety of related software, services, peripherals, networking
-solutions, and third-party digital content and applications. The Company's products and services include iPhone, iPad,
-Mac, iPod, Apple TV, a portfolio of consumer and professional software applications, the iOS and OS X operating
-systems, iCloud, and a variety of accessory, service and support offerings. The Company also delivers digital content
-and applications through the iTunes Store, App StoreSM, iBookstoreSM, and Mac App Store. The Company distributes its
-products worldwide through its retail stores, online stores, and direct sales force, as well as through third-party
-cellular network carriers, wholesalers, retailers, and value-added resellers. In February 2012, the Company acquired
-app-search engine Chomp."
-}
-```
-## Available Scripts  
+Finally, ```run yarn test``` or ```npm run test``` and Jest will print the message.
+Further use of Jest can be find [here](https://jestjs.io/docs/getting-started).
 
-In the project directory, you can run:
+##### 2.2 
+Since we are using Rshiny and convergence here which are both hard to test by static analysis, user beta test can be done by local testing.
 
-### `cd client && npm run build`
+### 3. Deployment
+We deploy our convergence service on AWS and dashboard on Heroku. Further details or access permission please contact qiaosenl@live.unc.edu.
 
-Builds the app for production. <br>
-The build is minified and the filenames include the hashes. <br>
-Your app is ready to be deployed! <br> 
+Heroku is recommended for the staging development. Current staging site can be find [here](https://teami-staging.herokuapp.com/).
 
-### `node server/server.js`  
+No addons needed for the heroku deployment. We don't provide continuous integration or continuous deployment now but will provide it very soon.
 
-Renders the app using Express.js server.<br>
-Open [http://localhost:5000](http://localhost:5000) to view it in the browser.     
+### 4. Technologies used
+Frontend framework: ReactJS
+Database: MongoDB
+Deployment: Heroku and AWS
+Testing: Jest
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console. <br>
+ADRs:
 
-This app is also deployed on Heroku. 
+### 5. Contributing
+Contact us to get the following permission:
+-[radarchart example repo](https://github.com/COMP523TEAMI).
+-[staging site](https://teami-staging.herokuapp.com/).
+-[Trello](https://trello.com/b/y8enL7qW/online-peer-learning-for-intro-stats).
 
-Go to https://comp426-final-project.herokuapp.com to view it online.
+style, testing, or process conventions and more details please visit our [team website](https://comp523teami.github.io/TEAMI/).
+
+### 6. Authors
+Qiaosen Lin, Yuhao Zhou, Qiuyang Zhang
+
+### 7. License
+
+
