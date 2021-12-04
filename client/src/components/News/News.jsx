@@ -92,7 +92,7 @@ const UploadTutorial = async (e) => {
   e.preventDefault();
 
 
-  alert("Success!");
+  alert("The Upload function is still under development. Please come back later!");
 };
 
 const Upload = () => {
