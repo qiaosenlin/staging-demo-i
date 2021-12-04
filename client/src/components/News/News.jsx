@@ -109,23 +109,31 @@ const Upload = () => {
   }, []);
 
   return (
-    <Grid
-      container
-      spacing={0}
-      direction="column"
-      alignItems="center"
-      justify="center"
-      style={{ minHeight: "100vh" }}
-    >
-      <form>
-        <label>
-          Tutorial Name:
-          </label>
-          <input type = "text"/>
-          <input type="submit" value="Submit" />
-      </form>
-
-    </Grid>
+    <CardContent>
+      <Typography component="h1" variant="h6" align="center">
+      Upload Tutorial
+      </Typography>
+      <TextField
+                variant="outlined"
+                margin="normal"
+                fullWidth
+                id="TutorialName"
+                label="TutorialName"
+                name="TutorialName"
+                
+                value= "Tutorial 1 -- ***"
+              />
+      <TextField
+                variant="outlined"
+                margin="normal"
+                fullWidth
+                id="url"
+                label="url"
+                name="url"
+                
+                value= "plug in your url"
+              />
+    </CardContent>
   );
 };
 
