@@ -39,7 +39,7 @@ const Dashboard = ({ purchasedStocks }) => {
         <Grid item xs={12} md={5} lg={5}>
         <Paper className={fixedHeightPaper}>
             tutorial2 --- Pepsi Challenge Simulation 
-            <img src = "./pepsi.jpeg"></img>
+            <img src = "pepsi.jpeg"></img>
             <a href="https://petometha.shinyapps.io/Online-Peer-Learning-for-Intro-Stats" target="_blank"> Pepsi Challenge Simulation </a>
             <nav><Link to = '/tutorial1'><li>Tutorial1</li> </Link></nav>
           </Paper>
