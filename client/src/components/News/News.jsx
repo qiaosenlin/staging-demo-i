@@ -130,7 +130,7 @@ const Upload = () => {
                 id="TutorialName"
                 label="TutorialName"
                 name="TutorialName"
-                value = {value}
+                value = {this.value}
               />
       <TextField
                 variant="outlined"
