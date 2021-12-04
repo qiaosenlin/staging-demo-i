@@ -33,25 +33,30 @@ const Dashboard = ({ purchasedStocks }) => {
         <Paper className={fixedHeightPaper}>
                 tutorial1 --- Rader Chart (still under development, see the link for further information)
                 
-                <a href="https://qiaosenlin.github.io/playground/"> Rader Chart </a>
+                <a href="https://qiaosenlin.github.io/playground/"> <a href="https://www.edrawsoft.com/chart/images/spider-chart-basic-example.png" target="_blank"> <img src = "https://i1.wp.com/pepsistore.com/wp-content/uploads/2020/04/pepsi1.gif?fit=761%2C473&ssl=1" width="450" 
+     height="300"></img> </a> </a>
           </Paper>
         </Grid>
         <Grid item xs={12} md={5} lg={5}>
         <Paper className={fixedHeightPaper}>
             tutorial2 --- Pepsi Challenge Simulation 
             
-            <a href="https://petometha.shinyapps.io/Online-Peer-Learning-for-Intro-Stats" target="_blank"> <img src = "https://i1.wp.com/pepsistore.com/wp-content/uploads/2020/04/pepsi1.gif?fit=761%2C473&ssl=1" width="400" 
+            <a href="https://petometha.shinyapps.io/Online-Peer-Learning-for-Intro-Stats" target="_blank"> <img src = "https://i1.wp.com/pepsistore.com/wp-content/uploads/2020/04/pepsi1.gif?fit=761%2C473&ssl=1" width="450" 
      height="300"></img> </a>
           </Paper>
         </Grid>
         <Grid item xs={12} md={5} lg={5}>
         <Paper className={fixedHeightPaper}>
-                tutorial3 --- Regression image <a href="https://github.com/COMP523TEAMI/Online-Peer-Learning-for-Intro-Stats"> Regression image </a>
+                tutorial3 --- Regression image 
+                <a href="https://petometha.shinyapps.io/Online-Peer-Learning-for-Intro-Stats" target="_blank"> <img src = "https://miro.medium.com/max/1400/1*KwdVLH5e_P9h8hEzeIPnTg.png" width="450" 
+     height="300"></img> </a>
           </Paper>
         </Grid>
         <Grid item xs={12} md={5} lg={5}>
         <Paper className={fixedHeightPaper}>
-                tutorial4 --- KNN image <a href="https://github.com/COMP523TEAMI/Online-Peer-Learning-for-Intro-Stats"> KNN image </a>
+                tutorial4 --- KNN image 
+                <a href="https://petometha.shinyapps.io/Online-Peer-Learning-for-Intro-Stats" target="_blank"> <img src = "https://cdn.analyticsvidhya.com/wp-content/uploads/2018/03/knn3.png" width="450" 
+     height="300"></img> </a>
           </Paper>
         </Grid>
       </Grid>
