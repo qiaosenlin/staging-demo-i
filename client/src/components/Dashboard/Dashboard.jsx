@@ -31,7 +31,7 @@ const Dashboard = ({ purchasedStocks }) => {
       <Grid container spacing={4}>
         <Grid item xs={12} md={5} lg={5}>
         <Paper className={fixedHeightPaper}>
-                tutorial1 --- Rader Chart (still under development, see the link for further information)
+                tutorial1 --- Rader Chart 
                 
                 <a href="https://qiaosenlin.github.io/playground/"target="_blank"> <img src = "https://www.edrawsoft.com/chart/images/spider-chart-basic-example.png" width="450" 
      height="280"></img> </a> 
@@ -48,14 +48,14 @@ const Dashboard = ({ purchasedStocks }) => {
         <Grid item xs={12} md={5} lg={5}>
         <Paper className={fixedHeightPaper}>
                 tutorial3 --- Regression image 
-                <a href="https://petometha.shinyapps.io/Online-Peer-Learning-for-Intro-Stats" target="_blank"> <img src = "https://miro.medium.com/max/1400/1*KwdVLH5e_P9h8hEzeIPnTg.png" width="450" 
+                <a href="https://github.com/qiaosenlin/staging-demo-i" target="_blank"> <img src = "https://miro.medium.com/max/1400/1*KwdVLH5e_P9h8hEzeIPnTg.png" width="450" 
      height="280"></img> </a>
           </Paper>
         </Grid>
         <Grid item xs={12} md={5} lg={5}>
         <Paper className={fixedHeightPaper}>
                 tutorial4 --- KNN image 
-                <a href="https://petometha.shinyapps.io/Online-Peer-Learning-for-Intro-Stats" target="_blank"> <img src = "https://cdn.analyticsvidhya.com/wp-content/uploads/2018/03/knn3.png" width="450" 
+                <a href="https://github.com/qiaosenlin/staging-demo-i" target="_blank"> <img src = "https://cdn.analyticsvidhya.com/wp-content/uploads/2018/03/knn3.png" width="450" 
      height="280"></img> </a>
           </Paper>
         </Grid>
