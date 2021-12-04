@@ -1,7 +1,7 @@
 {
-    "name": "tutorial",
+    "name": "stock-trading-simulator",
     "version": "1.0.0",
-    "description": "Web App",
+    "description": "Stock Trading Simulator Web App",
     "main": "./server/server.js",
     "scripts": {
         "test": "jest"
