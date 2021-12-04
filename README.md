@@ -33,6 +33,7 @@ To run locally run on the tutorial rshiny file, open up the rshiny file in the r
 Contact us and connect to AWS server which holds convergence service before testing/developing.
 
 ### 2. Testing(for security uses, test should see the branch main)
+#### Reason: we install the yarn test package in the main branch, resulted in some space wasted.
 
 ##### 2.1 
 Jest is used to test our project.
