@@ -40,7 +40,7 @@ const Dashboard = ({ purchasedStocks }) => {
         <Paper className={fixedHeightPaper}>
             tutorial2 --- Pepsi Challenge Simulation 
             <a href="https://petometha.shinyapps.io/Online-Peer-Learning-for-Intro-Stats" target="_blank"> Pepsi Challenge Simulation </a>
-            <Link to = '/tutorial1'><li>Tutorial1</li> </Link>
+            <nav><Link to = '/tutorial1'><li>Tutorial1</li> </Link></nav>
           </Paper>
         </Grid>
         <Grid item xs={12} md={5} lg={5}>
@@ -54,7 +54,7 @@ const Dashboard = ({ purchasedStocks }) => {
           </Paper>
         </Grid>
       </Grid>
-      <iframe height="400" width="100%" frameborder="no" src="https://petometha.shinyapps.io/Online-Peer-Learning-for-Intro-Stats/"> </iframe>
+      
     </Container>
   );
 };

@@ -68,23 +68,37 @@ No addons needed for the heroku deployment. We don't provide continuous integrat
 
 ### 4. Technologies used
 Frontend framework: ReactJS
+<br>
 Database: MongoDB
+<br>
 Deployment: Heroku and AWS
+<br>
 Testing: Jest
+<br>
 
-ADRs:
+[ADR](https://docs.google.com/document/d/19BIE_s-ASy2mF0FocRBIkcECElcFxoOIKOaZUfvy8Ek/edit).
+<br>
+More information about techonology and backend stuffs please contact [Joe](https://qiaosenlin.github.io/qiaosenlin/).
 
 ### 5. Contributing
 Contact us to get the following permission:
+<br>
 -[radarchart example repo](https://github.com/COMP523TEAMI).
+<br>
 -[staging site](https://teami-staging.herokuapp.com/).
+<br>
 -[Trello](https://trello.com/b/y8enL7qW/online-peer-learning-for-intro-stats).
-
+<br>
 style, testing, or process conventions and more details please visit our [team website](https://comp523teami.github.io/TEAMI/).
+
 
 ### 6. Authors
 Qiaosen Lin, Yuhao Zhou, Qiuyang Zhang
 
 ### 7. License
+GPL-3.0 License
+
+### 8. Acknowledgements
+Thanks for our mentor and App Lab for helping the development.
 
 
