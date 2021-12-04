@@ -121,7 +121,7 @@ const Upload = () => {
   return (
     <CardContent>
       <Typography component="h1" variant="h6" align="center">
-      Upload Tutorial
+      <text>Upload Tutorial Demo(under development)</text>
       </Typography>
       <TextField
                 variant="outlined"

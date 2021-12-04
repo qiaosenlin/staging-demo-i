@@ -147,7 +147,11 @@ const Search = ({ setPurchasedStocks, purchasedStocks }) => {
   };
 
   return (
+    
     <Container className={classes.addMargin}>
+      <Typography component="h1" variant="h6" align="center">
+      <text>Search Function Demo(under development)</text>
+      </Typography>
       <Autocomplete
         value={value}
         onChange={onSearchChange}
