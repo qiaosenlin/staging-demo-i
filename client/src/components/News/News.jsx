@@ -96,6 +96,7 @@ const UploadTutorial = async (e) => {
 };
 
 const Upload = () => {
+  value = "aadada";
   const classes = useStyles();
   const [cards, setCards] = useState([]);
   const [loading, setLoading] = useState("Loading...");
@@ -129,8 +130,7 @@ const Upload = () => {
                 id="TutorialName"
                 label="TutorialName"
                 name="TutorialName"
-                
-                value= "Tutorial 1 -- ***"
+                value = {value}
               />
       <TextField
                 variant="outlined"
