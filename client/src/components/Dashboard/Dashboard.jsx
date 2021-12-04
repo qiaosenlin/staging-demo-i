@@ -40,7 +40,8 @@ const Dashboard = ({ purchasedStocks }) => {
         <Paper className={fixedHeightPaper}>
             tutorial2 --- Pepsi Challenge Simulation 
             
-            <a href="https://petometha.shinyapps.io/Online-Peer-Learning-for-Intro-Stats" target="_blank"> <img src = "https://i1.wp.com/pepsistore.com/wp-content/uploads/2020/04/pepsi1.gif?fit=761%2C473&ssl=1"></img> </a>
+            <a href="https://petometha.shinyapps.io/Online-Peer-Learning-for-Intro-Stats" target="_blank"> <img src = "https://i1.wp.com/pepsistore.com/wp-content/uploads/2020/04/pepsi1.gif?fit=761%2C473&ssl=1" width="400" 
+     height="300"></img> </a>
           </Paper>
         </Grid>
         <Grid item xs={12} md={5} lg={5}>
