@@ -130,7 +130,7 @@ const Upload = () => {
                 id="TutorialName"
                 label="TutorialName"
                 name="TutorialName"
-                value = {this.value}
+                value = "Tutorial Name"
               />
       <TextField
                 variant="outlined"
@@ -140,7 +140,7 @@ const Upload = () => {
                 label="url"
                 name="url"
                 
-                value= "plug in your url"
+                value= "Shinyapps url"
               />
               
               <Box display="flex" justifyContent="center">
