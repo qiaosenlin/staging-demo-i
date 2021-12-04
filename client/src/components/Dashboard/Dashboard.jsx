@@ -31,9 +31,9 @@ const Dashboard = ({ purchasedStocks }) => {
       <Grid container spacing={4}>
         <Grid item xs={12} md={5} lg={5}>
         <Paper className={fixedHeightPaper}>
-                tutorial1 --- Rader Chart 
+                tutorial1 --- Normal Distribution 
                 
-                <a href="https://qiaosenlin.github.io/playground/"target="_blank"> <img src = "https://www.edrawsoft.com/chart/images/spider-chart-basic-example.png" width="450" 
+                <a href="https://qiaosenlin.github.io/playground/"target="_blank"> <img src = "https://analystprep.com/cfa-level-1-exam/wp-content/uploads/2019/10/page-123.jpg" width="450" 
      height="280"></img> </a> 
           </Paper>
         </Grid>
