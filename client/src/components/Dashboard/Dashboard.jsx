@@ -23,10 +23,10 @@ const useStyles = makeStyles((theme) => ({
 const Dashboard = ({ purchasedStocks }) => {
   const classes = useStyles();
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
-  const onNewPageButtonClick = (e) => {
-    e.preventDefault();
-    setCurrentPage("tutorial1");
-  };
+  // const onNewPageButtonClick = (e) => {
+  //   e.preventDefault();
+  //   setCurrentPage("tutorial1");
+  // };
  
   return (
     <Container maxWidth="lg" className={styles.container}>
