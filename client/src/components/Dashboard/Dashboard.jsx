@@ -3,9 +3,7 @@ import styles from "../Template/PageTemplate.module.css";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import {Container, Grid, Paper } from "@material-ui/core";
-import Chart from "./Chart";
-import Balance from "./Balance";
-import Purchases from "./Purchases";
+import {Link} from "react-router-dom";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -42,6 +40,7 @@ const Dashboard = ({ purchasedStocks }) => {
         <Paper className={fixedHeightPaper}>
             tutorial2 --- Pepsi Challenge Simulation 
             <a href="https://petometha.shinyapps.io/Online-Peer-Learning-for-Intro-Stats" target="_blank"> Pepsi Challenge Simulation </a>
+            
           </Paper>
         </Grid>
         <Grid item xs={12} md={5} lg={5}>

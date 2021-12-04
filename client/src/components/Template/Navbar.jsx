@@ -7,11 +7,6 @@ import SearchIcon from "@material-ui/icons/Search";
 import InfoIcon from "@material-ui/icons/Info";
 
 const Navbar = ({ currentPage, setCurrentPage }) => {
-  const onNewsButtonClick = (e) => {
-    e.preventDefault();
-    setCurrentPage("news");
-  };
-
   const onDashboardButtonClick = (e) => {
     e.preventDefault();
     setCurrentPage("dashboard");
@@ -44,16 +39,7 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
         </ListItemIcon>
         <ListItemText primary="Search" />
       </ListItem>
-      <ListItem
-        button
-        selected={currentPage === "news"}
-        onClick={onNewsButtonClick}
-      >
-        <ListItemIcon>
-          <InfoIcon />
-        </ListItemIcon>
-        <ListItemText primary="Market News" />
-      </ListItem>
+
     </div>
   );
 };
