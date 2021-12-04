@@ -85,7 +85,7 @@ const NewsCards = ({ cards, classes }) => {
   );
 };
 
-const News = () => {
+const Upload = () => {
   const classes = useStyles();
   const [cards, setCards] = useState([]);
   const [loading, setLoading] = useState("Loading...");
@@ -118,4 +118,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default Upload;
