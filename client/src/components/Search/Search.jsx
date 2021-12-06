@@ -89,45 +89,7 @@ const StockCard = ({ setPurchasedStocks, purchasedStocks, currentStock }) => {
 
   return (
     <div className={styles.root}>
-      {stockInfo && pastDay && (
-        <InfoCard stockInfo={stockInfo} price={pastDay.adjClose} />
-      )}
-      {sixMonthAverages && pastDay && pastMonth && pastTwoYears && (
-        <div>
-          <Grid container spacing={3}>
-            <LineChartCard
-              pastDataPeriod={pastTwoYears}
-              stockInfo={stockInfo}
-              duration={"2 years"}
-            />
-            <BarChartCard
-              sixMonthAverages={sixMonthAverages}
-              stockInfo={stockInfo}
-            />
-          </Grid>
-          <PriceCard pastDay={pastDay} />
-          <Grid container spacing={3}>
-            <PurchaseCard
-              setSelected={setSelected}
-              balance={userData.user.balance}
-            />
-            <LineChartCard
-              pastDataPeriod={pastMonth}
-              stockInfo={stockInfo}
-              duration={"month"}
-            />
-          </Grid>
-          {selected && (
-            <PurchaseModal
-              stockInfo={stockInfo}
-              pastDay={pastDay}
-              setSelected={setSelected}
-              setPurchasedStocks={setPurchasedStocks}
-              purchasedStocks={purchasedStocks}
-            />
-          )}
-        </div>
-      )}
+      function under development, please come back later.
     </div>
   );
 };
